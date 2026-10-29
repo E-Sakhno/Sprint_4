@@ -4,6 +4,8 @@
 
 `test_add_new_book_twice_only_one_in_collector` — проверяет, что при повторном добавлении одной и той же книги в словаре `books_genre` остаётся только одна запись
 
+`test_set_book_genre_adds_valid_genre_for_exist_book` — проверяет, что метод `set_book_genre` устанавливает книге жанр из списка доступных жанров, и он сохраняется в словаре `books_genre`
+
 `test_get_book_genre_returns_genre_for_existing_book` — проверяет, что для существующей книги с установленным жанром метод `get_book_genre` возвращает этот жанр
 
 `test_get_book_genre_from_invalid_genre_keeps_empty_genre` — проверяет, что при попытке установить книге жанр, которого нет в списке доступных, жанр остаётся пустой строкой

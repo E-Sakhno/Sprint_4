@@ -1,18 +1,11 @@
 from main import BooksCollector
+from data import prepared_books
 import pytest
 
 
 # класс TestBooksCollector объединяет набор тестов, которыми мы покрываем наше приложение BooksCollector
 # обязательно указывать префикс Test
 class TestBooksCollector:
-
-    prepared_books = [
-        "Гордость и предубеждение и зомби",
-        "Что делать, если ваш кот хочет вас убить",
-        "1984",
-        "Kolobok",
-        "Женитьба Фигаро",
-    ]
 
     @pytest.mark.parametrize("name", prepared_books)
     def test_add_new_book_with_less_or_equal_40_symbols_is_in_collector(self, book_collector, name):
